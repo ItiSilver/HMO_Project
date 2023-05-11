@@ -8,3 +8,9 @@
 #### 2. Get existing client by id
 #### 3. Get existing client by name
 #### 4. Get all existing clients
+
+## Technologies & dependencies:
+### Maven
+### jdk20
+### SpringBootApplication
+
