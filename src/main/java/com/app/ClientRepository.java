@@ -19,13 +19,13 @@ public class ClientRepository {
         System.out.println(c1);
         clients.add(c1);
     }
-    public Client addSong(Client newClient){
+    public Client addClient(Client newClient){
         clients.add(newClient);
         System.out.println("Add successfully!");
         return newClient;
         // this.findAll().add(newClient);
     }
-    public Client findById(String id){
+    public Client getClientById(String id){
         return (Client) (clients.stream().filter(client -> client.getId().equals(id)));
     }
     public List<Client> getClientByName(String name){

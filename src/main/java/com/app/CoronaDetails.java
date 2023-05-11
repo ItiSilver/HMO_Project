@@ -24,7 +24,7 @@ public class CoronaDetails {
     private Vaccine vac2;
     private Vaccine vac3;
     private Vaccine vac4;
-    private Date psitive_date;
+    private Date positive_date;
     private Date recovery_date;
 
 
