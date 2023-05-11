@@ -8,21 +8,21 @@ import java.util.Optional;
 
 @CrossOrigin
 @RestController
-@RequestMapping("clients")
+@RequestMapping("/clients")
 public class ClientController {
     @Autowired
     private ClientService service;
-
     //======GET========
-    @GetMapping("/")
+
+    @GetMapping("/getAllClients")
     public List<Client> getAllClients(){return service.getAllClients(); }
     @GetMapping("/{id}")
     public Optional<Client> getClientById(@PathVariable String id){return service.getClientById(id);}
     @GetMapping("/{name}")
     public List<Client> getClientByName(@PathVariable String name){return service.getClientByName(name);}
 
-    //=======PUT=======
-    @PutMapping("/addClient")
+    //=======POST=======
+    @PostMapping("/addClient")
     public List<Client> addClient(@RequestBody Client client){
         service.addClient(client);
         return service.getAllClients();

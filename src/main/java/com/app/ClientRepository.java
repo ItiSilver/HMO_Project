@@ -32,6 +32,7 @@ public class ClientRepository {
         return clients.stream().filter(client-> client.getName().equals(name)).collect(Collectors.toList());
     }
     public List<Client> getAllClients(){
+      System.out.println("this is break point");
         return clients;
     }
 }
